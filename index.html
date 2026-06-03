@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChiefJero | Editor de Video</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#09090b', // Negro profundo estilo Solazzo
+                        cardBg: '#141416', // Gris oscuro para los contenedores de video
+                        fireAccent: '#ef4444' // Rojo/Naranja para los detalles dinámicos
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-darkBg text-zinc-100 font-sans">
+
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 text-center relative border-b">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(239,68,68,0.05),transparent_60%)] pointer-events-none">
+        </div>
+
+        <nav class="navbar-editor">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <img src="img/profile.png" alt="Profile" class="nav-avatar">
+                    <span class="nav-name luxurious-roman-regular text-white text-xl">CHIEFJERO</span>
+                </div>
+                <div class="nav-center"></div>
+                <div class="nav-right">
+                    <a href="#work" class="nav-link">Trabajos</a>
+                    <a href="#contact" class="nav-link">Contacto</a>
+                    <a href="mailto:jerochaconalzate@gmail.com" class="nav-link nav-btn-cta">Hablemos</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="h-div max-w-3xl z-10">
+
+            <div class="placholder">Editor de Video</div>
+
+            <h1 class="header-h1 luxurious-roman-regular uppercase">
+                CHIEFJERO
+            </h1>
+            <p class=" header-h2 text-xl md:text-2xl font-medium tracking-tight mb-8">
+                Creando videos de <span class="linear-background">alto impacto y retención.</span>
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#work"
+                    class="btn-shadow navy-btn px-8 py-3 font-semibold rounded-lg transition-all duration-300 transform hover:-translate-y-0.5">
+                    Ver Trabajos
+                </a>
+                <a href="#contact"
+                    class="btn-shadow px-8 py-3 bg-white text-black font-semibold rounded-lg transition-all duration-300 transform hover:-translate-y-0.5">
+                    Contactar
+                </a>
+            </div>
+        </div>
+        <div class="mt-10 darrow">&darr;</div>
+    </section>
+
+    <section id="work" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="mb-12">
+            <h2 class="h2-header font-bold mb-4">Trabajos</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div
+                class="bg-cardBg border border-zinc-800/80 rounded-xl overflow-hidden group hover:border-zinc-700 transition-all duration-300">
+                <div class="aspect-[9/16] relative w-full bg-black">
+                    <video class="video-1 absolute top-0 left-0 w-full h-full object-cover"
+                        src="/video/Clip-Jaquebue.mp4" controls autoplay muted loop playsinline allowfullscreen>
+                    </video>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-mono uppercase tracking-wider">01. Storytelling Corto</span>
+                    <h3 class="bluen text-xl font-bold mt-1 mb-2">Clip Storytelling</h3>
+                    <p class="text-sm text-zinc-400">
+                        Edición de ritmo rápido enfocada en la retención del usuario, subtítulos animados y diseño de
+                        sonido inmersivo.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="bg-cardBg border border-zinc-800/80 rounded-xl overflow-hidden group hover:border-zinc-700 transition-all duration-300">
+                <div class="aspect-[9/16] relative w-full bg-black">
+                    <video class="video-1 absolute top-0 left-0 w-full h-full object-cover" src="/video/Clip Adriá.mp4"
+                        controls autoplay muted loop playsinline allowfullscreen>
+                    </video>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-mono uppercase tracking-wider">02. Video Podcast</span>
+                    <h3 class="bluen text-xl font-bold mt-1 mb-2">Clip Podcast</h3>
+                    <p class="text-sm text-zinc-400">
+                        Edición de videoclip para podcast con b-rolls, subtítulos virales, storytelling y diseño de
+                        sonido.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="bg-cardBg border border-zinc-800/80 rounded-xl overflow-hidden group hover:border-zinc-700 transition-all duration-300">
+                <div class="aspect-[9/16] relative w-full bg-black">
+                    <video class="video-1 absolute top-0 left-0 w-full h-full object-cover"
+                        src="/video/Clip Hormozi.mp4" controls autoplay muted loop playsinline allowfullscreen>
+                    </video>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-mono uppercase tracking-wider">03. Video Youtube</span>
+                    <h3 class="bluen text-xl font-bold mt-1 mb-2">Clip Youtube</h3>
+                    <p class="text-sm text-zinc-400">
+                        Edición de un fragmento recogido de un video de Youtube, con subtítulos virales, storytelling y
+                        diseño de sonido.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="bg-cardBg border border-zinc-800/80 rounded-xl overflow-hidden group hover:border-zinc-700 transition-all duration-300">
+                <div class="aspect-[9/16] relative w-full bg-black">
+                    <video class="video-1 absolute top-0 left-0 w-full h-full object-cover" src="/video/Clip Top.mp4"
+                        controls autoplay muted loop playsinline allowfullscreen>
+                    </video>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-mono uppercase tracking-wider">04. Video Viral</span>
+                    <h3 class="bluen text-xl font-bold mt-1 mb-2">Clip Viral</h3>
+                    <p class="text-sm text-zinc-400">
+                        Edición de formato de video en tendencia, con animaciones dinámicas, efectos de sonido y música
+                        en tendencia.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="h3-header md:text-5xl font-black mb-4">Trabajemos Juntos</h2>
+            <p class="r-text mb-8 max-w-md mx-auto text-balance">
+                Hagamos que tus videos destaquen en el feed y retengan a tu audiencia desde el primer segundo.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="mailto:jerochaconalzate@gmail.com"
+                    class="navy-btn items-center gap-2 px-6 py-3 rounded-lg transition-all font-medium">
+                    <span>📩 Enviar Email</span>
+                </a>
+                <a href="https://wa.me/573124654968" target="_blank"
+                    class="navy-btn items-center gap-2 px-6 py-3 rounded-lg transition-all font-medium">
+                    <span>💬 Mensaje Directo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-xs text-zinc-600 ">
+        <p style="color: rgb(0, 0, 61); font-weight: bold;">&copy; 2026 Jerónimo Chacón Alzate. Todos los derechos
+            reservados.</p>
+    </footer>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
